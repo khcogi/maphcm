@@ -49,11 +49,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Upload dist artifact
-        if: always()
-        uses: actions/upload-artifact@v5
-        with:
-          name: dist
-          path: dist
-          if-no-files-found: error
