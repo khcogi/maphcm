@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Link, Route, Routes, useLocation } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import MapJourneyPage from './pages/MapJourneyPage'
 import QuizPage from './pages/QuizPage'
@@ -82,9 +82,9 @@ function App() {
   const t = APP_TEXT[language]
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Shell />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
